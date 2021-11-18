@@ -1,0 +1,39 @@
+
+.jeu{
+    width: 90vw;
+    height: 70vh;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.jeu div img{
+    width: 10vw;
+}
+.global{
+    background-image: url(./../../../assets/table.png);
+    border: 2vw rgb(154,0,0) solid;
+}
+.joueurs{
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.joueurs div img{
+    height: 15vh;
+}
+span{
+    font-weight: bold;
+    color: white;
+    font-size: 3vh;
+    
+}
+.joueurs div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(154,0,0);
+    
+}

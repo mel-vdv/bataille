@@ -1,0 +1,27 @@
+<p>game works!</p>
+
+<p>bienvenue  {{quiEstCo}} ({{coOrNot}})</p>
+<p>partie {{numero}} {{statut}} </p>
+<p>adversair : {{adversaire}}</p>
+<p>tas : {{tas.length}}</p>
+<p> au tour de {{auTourDe}} de jouer</p>
+
+
+<div class="global">
+    <div class="joueurs">
+        <div>
+            <span>{{joueur1|uppercase}}</span><img src="./../../../assets/joueur.png" alt="">  <span>{{score1}} points</span>
+        </div> 
+        
+        <div>
+           <span>{{joueur2|uppercase}}</span><img src="./../../../assets/joueur.png" alt=""> <span>{{score2}} points </span> 
+       </div>
+    </div>   
+   <div class="jeu">
+      <div *ngFor="let carte of sixCartes"> 
+          <img src="./../../../assets/{{carte.image}}.png" alt=""
+          (click)="retourner(carte.perso, carte.index)">
+      </div>
+   </div>
+   
+   </div>

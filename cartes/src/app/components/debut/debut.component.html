@@ -1,0 +1,26 @@
+<div *ngIf="coOrNot==='deco'">
+    <div class='error'>{{messageErreur}}</div> 
+ <h3>je suis nouveau </h3>
+ pseudo:
+ <input (click)="clik()" type="text" name='pseudo' [(ngModel)]='newPseudo'>
+ <button (click)="nouveau()">valider</button>
+ 
+ <h3>je me connecte</h3>
+ pseudo:
+ <input (click)='clik()' type="text" name='pseudo' [(ngModel)]='pseudo'>
+ <button (click)="co()">valider</button>
+ </div>
+ <!----------------------------------------------------------------------------->
+ <div *ngIf="coOrNot==='co'">
+ <h3>bienvenue {{pseudo}}</h3>
+ <img (click)='deco()'height="40px" src="./../../../assets/deconnexion.png" alt="">
+ 
+ <a routerLink="/stat"><img height="40px" src="./../../../assets/stat.png" alt=""></a> 
+ 
+ 
+ <ul *ngFor='let autreJoueur of autresJoueurs'>
+     <li class="{{autreJoueur.coOrNot}}">
+         {{autreJoueur.pseudo}} <img (click)="action(autreJoueur.pseudo, autreJoueur.etat)" [src]="'./../../../assets/'+autreJoueur.etat+'.png'" alt="statut">
+     </li>
+ </ul>
+ </div>

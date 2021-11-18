@@ -1,0 +1,24 @@
+{
+  "name": "serveur",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node index.js"
+  },
+  "author": "melvdev",
+  "license": "ISC",
+  "dependencies": {
+    "@types/socket.io": "^3.0.2",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "mongodb": "^4.2.0",
+    "nodemon": "^2.0.15",
+    "socket.io": "^4.4.0"
+  },
+  "engines": {
+    "node":"14.16.1",
+    "npm":"7.11.1"
+  }
+}
